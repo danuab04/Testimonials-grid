@@ -1,0 +1,125 @@
+
+  /* .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); } */
+body{
+  background-color: #EFFFFD;
+  font-family:'Barlow Semi Condensed', sans-serif;
+  box-sizing: border-box;
+  padding:  6% 12% 1%;
+  margin: auto;
+  font-size: 13px;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  gap:1.5rem;
+  margin-bottom: 5%;
+}
+.content{
+  padding: 1.2rem 2rem;
+  border-radius: 10px;
+  -moz-box-shadow: 8px 8px 8px 0  hsl(217, 19%, 35%, 5%);
+  -webkit-box-shadow: 8px 8px 8px 0  hsl(217, 19%, 35%, 5%);
+   box-shadow: 8px 8px 8px 0  hsl(217, 19%, 35%, 5%);
+}
+
+span{
+  padding: 0;
+  margin: 0;
+  float: left;
+  display: inline-block;
+}
+img{
+  width: 60%;
+  border-radius: 50%;
+  margin-right: 0;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.name{
+  float:left;
+  padding-top:12px;
+  transform: translate(-18%,-8%);
+}
+h5, p{
+  margin: 0;
+}
+.name p{
+  font-size: 0.6rem;
+  opacity: 50%;
+}
+.body p{
+  line-height: 1.2rem;
+  opacity: 50%;
+}
+.body{
+  clear:left;
+}
+.purple{
+  background-image: url("images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 76% 0;
+  background-size: 16% 34%;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(263, 55%, 52%);
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+}
+.grey{
+  color:hsl(0, 0%, 100%);
+  background-color: hsl(217, 19%, 35%);
+  position: relative;
+  right: 0;
+}
+
+
+.long-white{
+  color:hsl(217, 19%, 35%);
+  background-color:hsl(0, 0%, 100%);
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start:4;
+  grid-column-end: 5;
+
+}
+.short-white{
+  color:hsl(217, 19%, 35%);
+  background-color:hsl(0, 0%, 100%);
+
+
+}
+
+.black{
+  color:hsl(0, 0%, 100%);
+  background-color:hsl(219, 29%, 14%);
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+footer{
+  text-align: center;
+
+}
+
+@media screen and (max-width:375px) {
+
+  .grid-container {
+  display: flex;
+  flex-flow: column;
+  }
+
+  .content{
+    padding: 1.2rem 1.6rem;
+  }
+
+  body{
+    font-size: 12px;
+    padding: 5% 8% 1%;
+  }
+
+  .purple{
+    background-position: 91% 0;
+    background-size: 30% 22%;
+  }
+}
